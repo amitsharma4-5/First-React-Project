@@ -3,6 +3,7 @@ import { AlpineComponent } from "alpinejs";
 type CounterDataOutput = {
   count: number;
   increment: () => void;
+  reset: () => void;
   button: Record<
     string,
     (
@@ -19,6 +20,9 @@ export default function (): AlpineComponent<CounterDataOutput> {
         count: 0,
         increment() {
             this.count++;
+        },
+        reset() {
+            this.count = 0;
         },
         button: {
             ["@click"]() {
