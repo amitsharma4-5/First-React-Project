@@ -1,4 +1,5 @@
 import { Counter } from "$/views/counter";
+import { TodoList } from "$/views/todo";
 import jsxpineLogo from "/jsxpine.jpg";
 import viteLogo from "/vite.svg";
 
@@ -21,6 +22,7 @@ export function App() {
       <div class="flex flex-col justify-center items-center">
         <h1>Vite + JSXPine</h1>
         <Counter />
+        <TodoList />
         <p class="read-the-docs">
           Click on the {readDoccs} logos to learn more
         </p>
